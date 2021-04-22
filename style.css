@@ -19,14 +19,16 @@ body {
   padding: 0;
 }
 
-.brand-title a {
+.brand-title a{
   text-decoration: none;
   color: #F3F3F3;
   font-size: 1.5rem;
   margin: .5rem;
 }
 
-
+.brand-title a:hover {
+  color: #DE354C;
+}
 
 .navbar-links ul {
   margin: 0;
@@ -46,7 +48,7 @@ body {
 }
 
 .navbar-links li:hover {
-  background-color: #932432;
+  background-color: #DE354C;
 }
 
 .toggle-button {
@@ -65,6 +67,10 @@ height: 3px;
 width: 100%;
 background-color: #EEEEEE;
 border-radius: 10px;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 .container {
