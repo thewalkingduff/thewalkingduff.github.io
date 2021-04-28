@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
 }
 
 body {
@@ -8,6 +14,15 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #283747;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 2rem;
 }
 
 .navbar {
@@ -22,12 +37,13 @@ body {
 .brand-title a{
   text-decoration: none;
   color: #F3F3F3;
-  font-size: 1.5rem;
-  margin: .5rem;
+  font-size: 2.5rem;
+  margin: 1rem;
 }
 
 .brand-title a:hover {
   color: #DE354C;
+  transition: 0.3s;
 }
 
 .navbar-links ul {
@@ -41,56 +57,48 @@ body {
 }
 
 .navbar-links li a {
+  font-size: 1.65rem;
   text-decoration: none;
   color: #F3F3F3;
-  padding: 1rem;
+  padding: 2rem;
   display: block;
 }
 
 .navbar-links li:hover {
   background-color: #DE354C;
+  transition: 0.3s;
 }
 
 .toggle-button {
   position: absolute;
-  top: .5rem;
-  right: 1rem;
+  top: 1rem;
+  right: 2rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 3rem;
+  height: 2.1rem;
 }
 
 .toggle-button .bar {
-height: 3px;
+height: .3rem;
 width: 100%;
-background-color: #EEEEEE;
-border-radius: 10px;
-}
-
-h1 {
-  font-size: 4rem;
+background-color: #f3f3f3;
+border-radius: .1rem;
 }
 
 .container {
   display: grid;
-  gap: 20px;
+  gap: .2rem;
   grid-template-columns: 1fr;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   grid-template-rows: 1fr;
   text-align: center;
 }
 
 .headline {
-    font-size: 2rem;
-    padding: 25px;
+    font-size: .2rem;
+    padding: 2.5rem;
     text-transform: uppercase;
-}
-
-.btn btn-primary {
-  color: #EEEEEE;
-  background-color: #333333;
 }
 
 .bio {
@@ -98,19 +106,22 @@ h1 {
 }
 
 .bio h5 {
-  line-height: 2rem;
+  line-height: 3.5rem;
 }
 
-div h5 a {
-  color:  #DE354C;
-  text-decoration: none;
+.learn-btn {
+  font-size: 2.5rem;
+  background:  #DE354C;
+  color: #F3F3F3;
+  margin-top: 3.5rem;
 }
 
-div h5 a:hover {
-  color:  #DE354C;
-  letter-spacing: 2px;
+.learn-btn:hover {
+  color: #F3F3F3;
+  letter-spacing: .2rem;
   transition: 0.5s;
 }
+
 
 
 @media (max-width: 700px) {
@@ -138,11 +149,15 @@ div h5 a:hover {
     }
 
     .navbar-links li a {
-      padding: .5rem 1rem;
+      padding: 1rem 1.75rem;
     }
 
     .navbar-links.active {
       display: flex;
+    }
+
+    h1 {
+      font-size: 4rem;
     }
 
     .youtube-container {
@@ -160,7 +175,40 @@ div h5 a:hover {
       height: 100%;
   }
 
+  .learn-btn {
+    font-size: 2rem;
+    background:  #DE354C;
+    color: #F3F3F3;
+    margin-top: 3.5rem;
+  }
+
 
 }
 
+/* Footer */ 
+
+footer {
+  background: #283747;
+  color: #F3F3F3;
+}
+
+footer div a {
+  color: #F3F3F3;
+  text-decoration: none;
+}
+
+footer div a:hover {
+  color: #DE354C;
+  transition: 0.3s;
+
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.footer-copyright {
+font-size: 1.25rem;
+}
 
