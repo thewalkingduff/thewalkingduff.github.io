@@ -37,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 3.5rem;
-  text-transform: capitalize;
+  text-transform: none; 
   color: #3C1874;
   padding: 3rem 10rem;
 }
