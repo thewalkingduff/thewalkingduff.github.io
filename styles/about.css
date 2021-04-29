@@ -36,9 +36,10 @@ h2 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: capitalize;
   color: #3C1874;
+  padding: 3rem 10rem;
 }
 
 h5 {
@@ -187,14 +188,14 @@ border-radius: .1rem;
   /* Buttons */
 
   .btn-learn {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background:  #DE354C;
     color: #F3F3F3;
     margin: 2rem 0 5rem;
   }
 
   .btn-learn:hover {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     background:  #DE354C;
     color: #F3F3F3;
     letter-spacing: 2px;
@@ -262,6 +263,10 @@ border-radius: .1rem;
 
     h2 {
       font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    padding: 2rem;
   }
 
     h4 {

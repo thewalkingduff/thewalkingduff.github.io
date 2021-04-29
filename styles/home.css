@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   text-transform: uppercase;
   padding: 3rem;
 }
@@ -29,7 +29,9 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  text-transform: capitalize;
 }
 
 .navbar {
@@ -109,18 +111,15 @@ border-radius: .1rem;
 }
 
 .bio {
-  padding: 7% 15%;
-}
-
-.bio h5 {
-  line-height: 3.5rem;
+  margin: 5rem;
+  padding: 1rem;
 }
 
 .learn-btn {
   font-size: 2.5rem;
   background:  #DE354C;
   color: #F3F3F3;
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 
 .learn-btn:hover {
