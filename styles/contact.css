@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,17 +12,27 @@ html {
 
 body {
   background: #F3F3F3;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Monofett', cursive;
   color: #283747;
 }
 
 h1 {
-  margin: 3rem;
   font-size: 5rem;
-  font-weight: 900;
   line-height: 1.5;
   text-align: center;
-  padding: 10rem 8rem 2rem;
+  /* padding: 10rem 8rem 2rem; */
+  color: #DE354C;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.5;
+  text-align: center;
+  /* padding: 10rem 8rem 2rem; */
   color: #DE354C;
   text-align: left;
   text-transform: uppercase;
@@ -33,10 +43,10 @@ h3 {
 }
 
 p {
-    font-size: 1.40rem;
+    font-size: 2.5rem;
 }
 
-h3 a {
+a {
     text-decoration: none;
 }
 
@@ -52,7 +62,7 @@ h3 a {
 .brand-title a{
   text-decoration: none;
   color: #F3F3F3;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin: 1rem;
 }
 
@@ -72,7 +82,7 @@ h3 a {
 }
 
 .navbar-links li a {
-    font-size: 1.65rem;
+    font-size: 2.65rem;
   text-decoration: none;
   color: #F3F3F3;
   padding: 2rem;
@@ -150,14 +160,15 @@ ul {
     background: #283747;
 }
 
-.contact h3 span {
-    color: #DE354C;
+.contact h2 span {
+    color: #0072B1;
 }
 
-.contact h3 span:hover {
-    color: #0072B1;
+.contact h2 span:hover {
+    letter-spacing: .25rem;
     transition: 0.5s;
 }
+
 
 /* FORM STYLES */
 
@@ -183,6 +194,7 @@ ul {
 }
 
 .contact form button {
+  font-size: 2.5rem;
     background: #DE354C;
     color: white;
     border: 0;
@@ -191,11 +203,52 @@ ul {
 
 .contact form button:hover,
 .contact form button:focus {
-    background: #932432;
+    background: #069123;
     color: #fff;
     outline: 0;
-    transition: background-color 2s ease-out;
+    transition: background-color 1s ease-out;
 }
+
+p button {
+  font-size: 2rem;
+}
+p button:hover {
+  letter-spacing: .25rem;
+  transition: 0.5s;
+}
+
+/* Planet Contact */
+#planet {
+  font-size: 7rem;
+}
+
+.robot-welcome {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.robot {
+  height: 20rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); }	
+}
+
 
 /* Footer */ 
 
@@ -223,12 +276,12 @@ footer div a:hover {
 }
 
 .social-icon {
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 3rem;
+    padding: 2.5rem;
 }
 
 .footer-copyright {
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 
 @media(max-width:1000px) {
@@ -241,7 +294,7 @@ footer div a:hover {
 
 @media (max-width: 700px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-align: left;
     padding: 6rem 2rem 1rem ;
   }
@@ -277,9 +330,11 @@ footer div a:hover {
       display: flex;
     }
 
-    /* .container {
-        padding: 2em;
-    } */
+    .robot {
+      height: 15rem;
+      width: 15rem;
+      text-align: center;
+    }
 
     .contact h3 {
         font-size: 1.5em;
