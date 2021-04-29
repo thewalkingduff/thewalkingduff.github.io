@@ -19,19 +19,22 @@ body {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 9rem;
   text-transform: uppercase;
   padding: 3rem;
+  text-align: center;
 }
 
 h2 {
   font-size: 5rem;
+  text-align: center;
 }
 
 h5 {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 5rem;
-  text-transform: capitalize;
+  text-transform: none;
+  text-align: center;
 }
 
 .navbar {
@@ -148,14 +151,28 @@ footer div a:hover {
 
 .social-icon {
   font-size: 2.5rem;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .footer-copyright {
 font-size: 1.25rem;
 }
 
-
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h5 {
+    font-size: 3rem;
+  }
+}
 
 @media (max-width: 700px) {
     .toggle-button {
@@ -191,14 +208,15 @@ font-size: 1.25rem;
 
     h1 {
       font-size: 5rem;
+      padding: 1rem;
     }
 
     h2 {
-      font-size: 3.5rem;
+      font-size: 3.0rem;
     }
 
     h5 {
-      font-size: 2.5rem;
+      font-size: 2.0rem;
       line-height: 3.5rem;
     }
 
@@ -222,6 +240,11 @@ font-size: 1.25rem;
     background:  #DE354C;
     color: #F3F3F3;
     margin-top: 3.5rem;
+  }
+
+  .social-icon {
+    font-size: 2.5rem;
+    padding: 2rem;
   }
 
 

@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-size: 5rem;
-  line-height: 1.5;
+  line-height: 1.25;
   text-align: center;
   /* padding: 10rem 8rem 2rem; */
   color: #DE354C;
@@ -114,7 +114,7 @@ border-radius: .1rem;
 
 .showcase {
     width: 100%;
-    padding: 50px 75px 0;
+    padding: 0 75px;
     background: #f3f3f3;
     color: white;
     margin-bottom: 5rem;
@@ -189,7 +189,6 @@ ul {
 .contact form input,
 .contact form textarea {
     width: 100%;
-    padding: 1em;
     border: 1px solid #3C1874;
 }
 
@@ -199,6 +198,7 @@ ul {
     color: white;
     border: 0;
     text-transform: uppercase;
+    padding: 2rem;
 }
 
 .contact form button:hover,
@@ -277,7 +277,7 @@ footer div a:hover {
 
 .social-icon {
     font-size: 3rem;
-    padding: 2.5rem;
+    padding: 5rem;
 }
 
 .footer-copyright {
