@@ -113,6 +113,13 @@ background-color: #f3f3f3;
 border-radius: .1rem;
 }
 
+.welcome-moon {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
 .showcase {
     width: 100%;
     padding: 0 75px;
@@ -219,6 +226,11 @@ p button:hover {
 }
 
 /* Planet Contact */
+#moon-purple img{
+  height: 40rem;
+  width: 40rem;
+}
+
 #planet {
   font-size: 7rem;
 }
@@ -285,10 +297,22 @@ footer div a:hover {
     font-size: 2rem;
 }
 
+@media (max-width: 1300px){
+  #moon-purple img{
+    display: none;
+  }
+  .welcome-moon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
+}
+
 @media(max-width:1000px) {
 
     .showcase {
-        padding: 50px 2px 0px 2px;
+        padding: 10px 2px 0px 2px;
     }
 
 }
