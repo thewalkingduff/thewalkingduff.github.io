@@ -25,24 +25,25 @@ main {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   text-transform: uppercase;
   padding-top: 5rem;
 }
 
-h4 {
-    font-size: 2.5rem;
+h2 {
+    font-size: 5rem;
+    color: #3C1874;
+}
+
+h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #3C1874;
 }
 
 h5 {
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-h6 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    color: #3C1874;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 
 p {
@@ -57,8 +58,8 @@ div img {
 }
 
 div a img {
-    height: 18.38rem;
-    width: 35rem;
+    height: 36.76rem;
+    width: 70rem;
 }
 
 .navbar {
@@ -215,6 +216,10 @@ border-radius: .1rem;
         padding: 0 1rem 1rem;
         margin: 2rem 3rem;
     }
+    div a img {
+      height: 18.38rem;
+      width: 35rem;
+  }
   }
 
 
@@ -252,12 +257,21 @@ border-radius: .1rem;
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 7rem;
     }
+
+    h2 {
+      font-size: 4rem;
+  }
 
     h4 {
         font-size: 1.5rem;
     }
+
+    h5 {
+      font-size: 2.0rem;
+      line-height: 3.0rem;
+  }
 
     .container div img {
         padding: 10px;
