@@ -340,6 +340,10 @@ footer div a:hover {
         font-size: 1.5em;
     }
 
+    .footer-copyright {
+      font-size: 1.25rem;
+  }
+
     .social-icon {
       font-size: 2.5rem;
       padding: 2rem;
