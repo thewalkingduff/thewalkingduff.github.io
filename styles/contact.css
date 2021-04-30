@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Orbitron:wght@900&display=swap');
 
@@ -13,28 +14,26 @@ html {
 
 body {
   background: #F3F3F3;
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Monofett', cursive;
-  /* font-family: 'Orbitron', sans-serif; */
+  font-family: 'Orbitron', sans-serif;
+  /* font-family: 'Monofett', cursive; */
   color: #3C1874;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   line-height: 1.25;
   text-align: center;
   /* padding: 10rem 8rem 2rem; */
   color: #DE354C;
-  text-align: left;
   text-transform: uppercase;
 }
 
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.5;
   text-align: center;
-  color: #F3F3F3;
+  color: #DE354C;
   text-align: left;
   text-transform: uppercase;
 }
@@ -47,11 +46,48 @@ p {
     font-size: 2.5rem;
 }
 
+p button {
+  font-size: 2rem;
+}
+p button:hover {
+  letter-spacing: .25rem;
+  transition: 0.5s;
+}
+
 a {
     text-decoration: none;
 }
 
+div ol h2 {
+  padding: 2rem 0;
+}
+
+ol {
+  background: #3C1874;
+  padding: 5rem;
+  list-style-position: inside;
+}
+
+ol li {
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #F3F3F3;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+ol li a span {
+  color: #DE354C ;
+}
+
+ol li a span:hover {
+color: #0072B1;
+  transition: 0.5s;
+}
+
 .navbar {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +99,7 @@ a {
 .brand-title a{
   text-decoration: none;
   color: #F3F3F3;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin: 1rem;
 }
 
@@ -83,10 +119,10 @@ a {
 }
 
 .navbar-links li a {
-    font-size: 2.65rem;
+    font-size: 1.65rem;
   text-decoration: none;
   color: #F3F3F3;
-  padding: 1.25rem 2rem;
+  padding: 2rem;
   display: block;
 }
 
@@ -120,6 +156,15 @@ border-radius: .1rem;
   gap: 2rem;
 }
 
+/* .welcome-contact {
+  text-align: center;
+} */
+
+.your-mission {
+  /* padding: 0rem; */
+  margin: 0 5rem 5rem;
+}
+
 .showcase {
     width: 100%;
     padding: 0 75px;
@@ -137,17 +182,12 @@ border-radius: .1rem;
     opacity: 0.9;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
 .brand {
     text-align: center;
 }
 
 .brand span {
-    color: #f3f3f3;
+    color: #F3F3F3;
 }
 
 .wrapper {
@@ -155,7 +195,7 @@ ul {
 }
 
 .wrapper>* {
-    padding: 1em;
+    padding: 1rem;
 }
 
 .company-info h3,
@@ -165,16 +205,7 @@ ul {
 }
 
 .contact {
-    background: #283747;
-}
-
-.contact h2 span {
-    color: #0072B1;
-}
-
-.contact h2 span:hover {
-    letter-spacing: .25rem;
-    transition: 0.5s;
+    background:#3C1874;
 }
 
 
@@ -217,14 +248,6 @@ ul {
     transition: background-color 1s ease-out;
 }
 
-p button {
-  font-size: 2rem;
-}
-p button:hover {
-  letter-spacing: .25rem;
-  transition: 0.5s;
-}
-
 /* Planet Contact */
 #moon-purple img{
   height: 40rem;
@@ -232,13 +255,24 @@ p button:hover {
 }
 
 #planet {
-  font-size: 7rem;
+  font-size: 10rem;
+}
+
+/* Your Mission */
+.orders {
+  font-size: 4.5rem;
+}
+
+#notes {
+  font-size: 1.75rem;
+  list-style: none;
+  line-height: 3.5rem;
 }
 
 .robot-welcome {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .robot {
@@ -297,7 +331,7 @@ footer div a:hover {
     font-size: 2rem;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1200px){
   #moon-purple img{
     display: none;
   }
@@ -307,25 +341,42 @@ footer div a:hover {
     grid-template-rows: 1fr;
     gap: 0;
   }
+  .your-mission {
+    margin: 0 0rem 2rem;
+  }
 }
 
-@media(max-width:1000px) {
+@media(max-width:1024px) {
+  div ol h2 {
+    padding: 1.5rem 0;
+  }
 
     .showcase {
         padding: 10px 2px 0px 2px;
     }
+    .orders {
+      font-size: 3.5rem;
+    }
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   h1 {
-    font-size: 3.5rem;
-    text-align: left;
-    padding: 6rem 2rem 1rem ;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem ;
   }
 
   h2 {
     font-size: 3rem;
+  }
+
+  ol li {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  div ol h2 {
+    padding: 1.25rem 0;
   }
 
     .toggle-button {
@@ -340,6 +391,7 @@ footer div a:hover {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
+      width: 100%;
     }
 
     .navbar-links ul {
@@ -351,22 +403,31 @@ footer div a:hover {
       text-align: center;
     }
 
-    .navbar-links li a {
-      padding: .5rem 1rem;
-    }
+    /* .navbar-links li a {
+      font-size: 1.65rem;
+    text-decoration: none;
+    color: #F3F3F3;
+    padding: 2rem;
+    width: 100%;
+  } */
 
     .navbar-links.active {
       display: flex;
     }
 
     .robot {
-      height: 15rem;
-      width: 15rem;
+      height: 12rem;
+      width: 12rem;
       text-align: center;
     }
 
     .contact h3 {
         font-size: 1.5em;
+    }
+    .orders {
+      font-size: 2rem;
+      line-height: 3.0rem;
+      padding: 1rem;
     }
 
     .footer-copyright {
@@ -377,5 +438,83 @@ footer div a:hover {
       font-size: 2.5rem;
       padding: 2rem;
   }
+
+  #planet {
+    font-size: 6rem;
+  }
+
+  #notes {
+    font-size: 1.50rem;
+    list-style: none;
+    line-height: 2.5rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem ;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  div ol h2 {
+    padding: 1rem 0;
+  }
+
+  ol li {
+    font-size: 1.5rem;
+  }
+
+
+    .navbar-links li a {
+      font-size: 1.65rem;
+    text-decoration: none;
+    color: #F3F3F3;
+    padding: 2rem;
+    width: 100%;
+  }
+
+    .robot {
+      height: 8rem;
+      width: 8rem;
+      text-align: center;
+    }
+
+    .contact h3 {
+        font-size: 1em;
+    }
+    .orders {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      padding: 0rem;
+    }
+
+    .footer-copyright {
+      font-size: 1.25rem;
+  }
+
+    .social-icon {
+      font-size: 2.5rem;
+      padding: 2rem;
+  }
+
+  #planet {
+    font-size: 6rem;
+  }
+
+  #notes {
+    font-size: 1.25rem;
+    list-style: none;
+    line-height: 2rem;
+    padding: 1.5rem 0 1rem;
+  }
+  .contact form label {
+    display: block;
+    font-size: 1.5rem;
+}
 
 }
