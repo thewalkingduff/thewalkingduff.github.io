@@ -91,7 +91,7 @@ color: #0072B1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #283747;
+  background-color: #3C1874;
   color: #000;
   padding: 0;
 }
@@ -300,7 +300,7 @@ border-radius: .1rem;
 /* Footer */ 
 
 footer {
-  background: #283747;
+  background: #3C1874;
   color: #F3F3F3;
 }
 
