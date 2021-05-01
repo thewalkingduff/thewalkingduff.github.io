@@ -27,7 +27,7 @@ main {
 h1 {
   font-size: 8rem;
   text-transform: uppercase;
-  padding-top: 5rem;
+  padding: 5rem 0 2rem;
 }
 
 h2 {
@@ -53,13 +53,8 @@ div img {
     padding: 10px;
     height: 326px;
     width: 300px;
+    border-radius: 50%;
 }
-
-div a img {
-    height: 36.76rem;
-    width: 70rem;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -125,6 +120,12 @@ border-radius: .1rem;
 #vic20 {
     font-size: 1.5rem;
     color: #3C1874;
+}
+
+#shatner {
+  height: 36.76rem;
+  width: 70rem;
+  border-radius: 0;
 }
 
 #tech-use {
@@ -240,10 +241,18 @@ footer div a:hover {
   font-size: 1.25rem;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 7rem;
+    padding: 4.75rem 1rem 0;
+  }
+}  
+
 
 @media (max-width: 768px) {
   h1 {
     font-size: 5rem;
+    padding: 4.5rem 1rem 2rem;
   }
   h2 {
     font-size: 3rem;
@@ -259,10 +268,6 @@ footer div a:hover {
     padding: 10px;
     height: 244px;
     width: 225px;
-  }
-  div a img {
-  height: 18.38rem;
-  width: 35rem;
   }
   .container-skills {
     background: #FFFFFF;
@@ -307,10 +312,13 @@ footer div a:hover {
     font-size: 2.5rem;
     padding: 2rem;
   }
-
+  #shatner {
+    height: 18.38rem;
+    width: 35rem;
+  }
   #tech-use-h2 {
   padding: 1rem 0 2rem;
-  color: #932432
+  color: #932432;
   }
 }
 
@@ -328,11 +336,6 @@ footer div a:hover {
     font-size: 2.0rem;
     line-height: 3.0rem;
   }
-  div a img {
-  height: 12.86rem;
-  width: 25rem;
-  }
-
   .learn-more {
     padding: 0 1rem 1rem;
     margin: 2rem 3rem;
@@ -373,9 +376,12 @@ footer div a:hover {
     font-size: 2.5rem;
     padding: 2rem;
   }
-
   #tech-use-h2 {
   padding: 1rem 0 2rem;
   color: #932432
+  }
+  #shatner {
+    height: 12.86rem;
+    width: 25rem;
   }
 }
