@@ -50,10 +50,10 @@ p {
 }
 
 div img {
-    padding: 10px;
-    height: 326px;
-    width: 300px;
-    border-radius: 50%;
+    
+    height: 360px;
+    width: 239px;
+    /* border-radius: 50%; */
 }
 .navbar {
   display: flex;
